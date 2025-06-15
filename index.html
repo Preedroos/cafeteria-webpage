@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria Cabral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-amber-50 min-h-screen">
+    <header class="bg-amber-900 text-white py-6 shadow-lg">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold">☕ Cafeteria Cabral</h1>
+        <p class="mt-2 text-amber-200">O melhor café da cidade!</p>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2 flex flex-col items-center text-center px-6">
+          <div class="relative mb-8">
+            <h2 class="text-4xl font-bold text-amber-800 mb-2 z-10 relative">
+              Sobre Nós
+            </h2>
+            <div
+              class="absolute -top-3 -left-4 w-12 h-12 bg-[url('https://cdn-icons-png.flaticon.com/512/924/924514.png')] bg-contain opacity-20"
+            ></div>
+          </div>
+
+          <p
+            class="text-gray-700 mb-8 text-lg leading-relaxed max-w-lg font-serif italic"
+          >
+            "Na Cafeteria Cabral, cada grão é torrado com maestria para criar
+            histórias em forma de café. Nossos baristas, verdadeiros artistas,
+            transformam ingredientes em experiências sensoriais que despertam
+            memórias."
+          </p>
+
+          <button
+            id="pedidoBtn"
+            class="relative overflow-hidden group bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-3 px-8 rounded-full transition-all duration-500 hover:shadow-xl hover:shadow-amber-200/30"
+          >
+            <span class="relative z-10 flex items-center">
+              <i class="fas fa-mug-hot mr-3 text-amber-200"></i>
+              <span class="tracking-wider">FAZER PEDIDO</span>
+            </span>
+            <span
+              class="absolute inset-0 bg-gradient-to-r from-amber-700 to-amber-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></span>
+          </button>
+
+          <div class="mt-12 flex space-x-2">
+            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-600"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-800"></div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            width="800"
+            height="600"
+            loading="lazy"
+            alt="Café especial"
+            class="w-full rounded-lg"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-amber-900 text-amber-100 py-4 mt-12">
+      <div class="container mx-auto px-4 text-center">
+        <p>
+          © 2025 Cafeteria Cabral |
+          <a href="#" class="hover:text-white">Contato</a>
+        </p>
+      </div>
+    </footer>
+
+    <script defer>
+      document.getElementById("pedidoBtn").addEventListener("click", () => {
+        alert(
+          "Pedido realizado! Em breve entraremos em contato para confirmar seu café especial ☕"
+        );
+      });
+    </script>
+  </body>
+</html>
