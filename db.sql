@@ -35,3 +35,6 @@ SELECT * FROM produtos WHERE disponivel = TRUE;
 
 -- Remoção de um produto
 DELETE FROM produtos WHERE id_produto = 3; -- Remove o Pão de Queijo
+
+-- Atualização do status de um pedido
+UPDATE pedidos SET status = 'Entregue' WHERE id_pedido = 1; -- Atualiza o status do primeiro pedido para 'Entregue'
