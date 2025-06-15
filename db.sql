@@ -32,3 +32,6 @@ INSERT INTO pedidos (id_produto, quantidade, status) VALUES
 -- Consultas de exemplo
 -- Listar todos os produtos disponíveis
 SELECT * FROM produtos WHERE disponivel = TRUE;
+
+-- Remoção de um produto
+DELETE FROM produtos WHERE id_produto = 3; -- Remove o Pão de Queijo
